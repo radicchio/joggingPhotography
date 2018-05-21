@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script");
+* {
+  font-family: "Calibri Light", Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-family: "Nanum Pen Script", cursive;
+  color: rgb(216, 60, 12);
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.title {
+  margin-left: 20px;
+  width: 60vw;
+  min-width: 150px;
+}
+
+nav ul {
+  display: flex;
+  width: 35vw;
+  justify-content: space-around;
+  flex-direction: row;
+}
+@media (max-width: 600px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#container {
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+/* SECTIONS */
+section {
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+#hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#how-it-works {
+  display: flex;
+  justify-content: center;
+}
+
+#how-it-works iframe {
+  width: 100%;
+  max-width: 560px;
+}
+
+@media (max-width: 600px) {
+  #hero {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+form {
+  padding-top: 20px;
+}
+
+input {
+  width: 100%;
+  max-width: 200px;
+  padding: 5px;
+}
+
+#email {
+  min-width: 150px;
+}
+
+#submit {
+  /* height: 20px; */
+  width: 100px;
+  background-color: rgb(6, 90, 48);
+  color: white;
+}
+
+.grid {
+  display: flex;
+  width: 80%;
+  padding-left: 10%;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  padding-right: 20px;
+  color: rgb(16, 61, 173);
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+}
+
+/* groups */
+#groups {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#south-ealing,
+#ealing-broadway,
+#ealing-common {
+  border: 1px solid green;
+  margin: 10px;
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.city {
+  background-color: bisque;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 15px 0;
+  font-weight: 700;
+}
