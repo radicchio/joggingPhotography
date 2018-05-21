@@ -7,6 +7,11 @@
 h1 {
   font-family: "Nanum Pen Script", cursive;
   color: rgb(216, 60, 12);
+  padding: 30px;
+  font-weight: 300;
+}
+h3 {
+  color: rgb(16, 61, 173);
 }
 
 li {
@@ -14,9 +19,12 @@ li {
 }
 
 header {
+  position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: lightskyblue;
+  width: 100%;
 }
 @media (max-width: 600px) {
   header {
@@ -41,7 +49,11 @@ nav ul {
     display: flex;
     flex-direction: column;
   }
+  nav ul li {
+    padding: 10px;
+  }
 }
+
 #container {
   max-width: 1000px;
   margin: 0px auto;
@@ -53,9 +65,15 @@ section {
   margin-bottom: 50px;
 }
 #hero {
-  display: flex;
-  flex-direction: column;
+  padding-top: 180px;
+  padding-right: 50px;
+  padding-left: 50px;
   text-align: center;
+}
+@media (max-width: 400px) {
+  #hero {
+    padding-top: 320px;
+  }
 }
 
 #how-it-works {
@@ -71,28 +89,38 @@ section {
 @media (max-width: 600px) {
   #hero {
     justify-content: center;
-    align-items: center;
+    text-align: center;
   }
 }
 
-form {
-  padding-top: 20px;
+#findOutMore {
+  display: flex;
+  padding-left: 10%;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  #findOutMore {
+    flex-direction: column;
+  }
 }
 
 input {
   width: 100%;
   max-width: 200px;
   padding: 5px;
+  margin: 10px;
 }
 
 #email {
   min-width: 150px;
+  margin-top: 0px;
 }
 
 #submit {
   /* height: 20px; */
   width: 100px;
-  background-color: rgb(6, 90, 48);
+  background-color: lightskyblue;
   color: white;
 }
 
@@ -107,16 +135,22 @@ input {
   align-items: center;
   justify-content: center;
   height: 125px;
-  width: 20vw;
+  width: 15vw;
   padding-right: 20px;
   color: rgb(16, 61, 173);
+  font-size: 3em;
 }
 
 .desc {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 125px;
+}
+
+@media (max-width: 500px) {
+  .desc {
+    height: 200px;
+  }
 }
 
 /* groups */
@@ -125,10 +159,17 @@ input {
   flex-direction: row;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  #groups {
+    flex-direction: column;
+    padding-right: 20px;
+  }
+}
+
 #south-ealing,
 #ealing-broadway,
 #ealing-common {
-  border: 1px solid green;
+  border: 1px solid rgb(216, 60, 12);
   margin: 10px;
   width: calc(100% / 3);
   display: flex;
@@ -137,8 +178,16 @@ input {
   text-align: center;
 }
 
+@media (max-width: 500px) {
+  #south-ealing,
+  #ealing-broadway,
+  #ealing-common {
+    width: 100%;
+  }
+}
+
 .city {
-  background-color: bisque;
+  background-color: lightskyblue;
   width: 100%;
   text-transform: uppercase;
   padding: 15px 0;
